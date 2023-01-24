@@ -1,0 +1,239 @@
+.homePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.4rem;
+
+
+    &__Introduction {
+        width: 100%;
+        height: 70%;
+        background-color: black;
+        position: relative;
+
+        &__background {
+            width: 102.9rem;
+            height: 593px;
+            opacity: 43%;
+        }
+
+        &__content {
+
+            img {
+                position: absolute;
+                right: 38px;
+                top: 47px;
+                background-color: #f6831f57;
+                border-radius: 100%;
+            }
+
+            h1 {
+                color: var(--light);
+                position: absolute;
+                left: 136px;
+                top: 62px;
+                width: 40%;
+                line-height: 3rem;
+                background-color: #f6831f3a;
+                padding: 3rem;
+                font-size: xx-large;
+                text-shadow: 0px 0px 3px #000000d4;
+                text-align: justify;
+                border-radius: 0.75rem;
+                font-family: 'Noto Naskh Arabic', serif;
+            }
+        }
+    }
+
+    &__products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // background-color: red;
+        position: relative;
+
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+
+            &__text {
+                font-size: 2.4rem;
+                font-weight: 100px;
+                color: var(--dark);
+                text-shadow: 1px 7px 11px #0000008a;
+                font-family: 'Lalezar', cursive;
+
+                &:before {
+                    content: " ";
+                    display: block;
+                    height: 3px;
+                    width: 32.2vw;
+                    position: absolute;
+                    top: 26px;
+                    left: 0;
+                    background: var(--official);
+                    border-radius: 2px;
+                }
+
+                &:after {
+                    content: " ";
+                    height: 3px;
+                    width: 33.2vw;
+                    background: var(--official);
+                    display: block;
+                    position: absolute;
+                    top: 26px;
+                    right: 0;
+                    border-radius: 2px;
+                }
+            }
+        }
+
+        &__boxS {
+            display: flex;
+            flex-direction: row;
+            gap: 1.2rem;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 40vh;
+            background-color: red($color: #000000);
+        }
+    }
+
+    &__MyFamily {
+        position: relative;
+        @extend .homePage__products__title__text;
+
+        &__title__text {
+            text-align: center;
+        }
+
+        &__contact {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            &__text {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+
+                p {
+                    font-family: 'Noto Naskh Arabic', serif;
+                    font-size: 1.62rem;
+                    text-shadow: 0px 0px !important;
+                }
+            }
+        }
+    }
+
+    &__Step {
+        // background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40vh;
+
+        &__box {
+            background-color: #70707026;
+            height: 80%;
+            width: 70vw;
+            border-radius: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            border-radius: 1.2rem;
+            border: 1px solid rgba(126 , 126, 126, 0.98);
+            box-shadow: 1px 1px 14px 4px rgba(126, 126, 126, 0.98);
+
+
+            &__title {
+                position: absolute;
+                top: -20px;
+                // background-color: green;
+                width: 70%;
+                /* text-align: center; */
+                height: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    font-size: 3.4rem;
+                    font-family: "Lalezar", cursive;
+                    text-shadow: 1px 1px 3px #cb7436;
+                }
+            }
+
+            &__content {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 3rem;
+
+                &__search {
+                    // background-color: purple;
+                    width: 50%;
+                    height: 8vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+
+                    &__btn {
+                        position: absolute;
+                        left: 7px;
+
+                        svg{
+                            position: absolute;
+                            top: 8px;
+                            font-size: 2.4rem;
+                            /* left: 69px; */
+                            right: -47px;
+                        }
+
+                    }
+
+                    input {
+                        width: 85%;
+                        height: 3.2rem;
+                        border-radius: 1.2rem;
+                        padding: 0.25rem 0.7rem;
+                        outline: none;
+                        font-size: 1.4rem;
+                        color: black;
+                        font-family: "Noto Naskh Arabic", serif;
+                        background-color: #80808021;
+                        border: none;
+                        box-shadow: 5px 3px 9px 2px grey;
+                    }
+                }
+
+                &__text {
+                    // background-color: yellow;
+                    width: 40%;
+
+                    p {
+                        font-family: 'Noto Naskh Arabic', serif;
+                        font-size: 1.62rem;
+                        text-shadow: 0px 0px !important;
+                    }
+                }
+
+
+            }
+        }
+
+
+
+    }
+
+
+
+}

@@ -1,0 +1,28 @@
+//basic style
+@use "./_variable.scss";
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.mainContainer{
+  margin: 1rem 4rem;
+}
+li {
+  list-style: none;
+  font-family: 'Lalezar', cursive;
+}
+
+
+//components style
+@import "./componentsStyle/_index.scss";
+
+
+
+//page style
+@import "./pageStyle/_index.scss";
+
+
+// font-family: 'Lalezar', cursive;
+// font-family: 'Noto Naskh Arabic', serif;
