@@ -1,23 +1,18 @@
 import ProductBox from "./../../components/BoxProducts/ProductsBox.HomePage";
-import Header from "@/components/Header/Header";
 import Button from "@/components/Button/Button";
 import { RiSearchLine } from 'react-icons/ri';
+import Carousel from "./../../components/Carousel/Carousel";
 
 // import Button from 'react-bootstrap/Butt
 
 const HomePage = () => {
     return (
         <div className="homePage" id="home">
-            <section className="homePage__Introduction">
-                <img src="/assets/image/titlePage.jpg" className="homePage__Introduction__background" />
-                <div className="homePage__Introduction__content">
-                    <img src="/assets/image/DIAN.png" />
-                    <h1>
-                        دیان همراه فردا
-                        <br />
-                        اولین معتمد مالیاتی کشور
-                    </h1>
-                </div>
+            <section className="homePage__carouselBox">
+                    <div className="homePage__carouselBox__title">
+                           <h2>اینجا متنی باشد که گویای هدف اصلی کار باشه</h2>
+                    </div>
+                    <Carousel/>
             </section>
             <section className="homePage__products">
 

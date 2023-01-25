@@ -1,0 +1,20 @@
+.carousel-item h3 {
+    color: var(--official);
+    font-size: 4rem;
+    font-family: 'Lalezar', cursive;
+    background-color: #000000ad;
+    text-align: center;
+    border-radius: 1.2rem;
+}
+
+.carousel-item p{
+    font-family: "Noto Naskh Arabic", serif;
+    color: var(--dark);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-item img {
+    height: 70vh;
+    border-radius: 1.2rem;
+}

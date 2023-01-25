@@ -10,6 +10,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ionic/react": "^6.5.0",
+    "@ionic/react-router": "^6.5.0",
     "@next/font": "13.1.2",
     "@react-icons/all-files": "^4.1.0",
     "@types/node": "18.11.18",
@@ -20,6 +22,8 @@
     "eslint-config-next": "13.1.2",
     "next": "13.1.2",
     "react": "18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-bootstrap-carousel": "^4.1.1",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "sass": "^1.57.1",
