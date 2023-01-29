@@ -78,7 +78,7 @@
   }
   @media only screen and (max-width: 950px) {
     .footer .col {
-      width: 33%;
+      // width: 33%;
     }
     .footer .col h1 {
       font-size: 14px;
@@ -89,7 +89,7 @@
   }
   @media only screen and (max-width: 500px) {
     .footer .col {
-      width: 50%;
+      // width: 50%;
     }
     .footer .col h1 {
       font-size: 14px;
@@ -103,3 +103,11 @@
       width: 100%;
     }
   }
+  @media only screen and (min-width:994px){
+    .navbar-expand-lg .navbar-nav {
+      flex-direction: row;
+      display: flex;
+      gap: 1.2rem;
+  }
+  }
+  

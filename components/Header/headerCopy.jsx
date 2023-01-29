@@ -4,7 +4,7 @@ import { RiTelegramLine } from 'react-icons/ri';
 import { TbPhoneCalling } from 'react-icons/tb';
 import  Button from '../Button/Button';
 import SocialMedial from '../SocialMedia/SocialMedia';
-
+import Link from 'next/link';
 
 const Header = () => {
     return ( 
@@ -12,7 +12,9 @@ const Header = () => {
           <div className='header_title'>
                <div className="header_title_Logo">
                <img src="./assets/image/DIAN.png" alt="" />
-               <p>آساک قرن</p>
+               <Link href="/">
+                    <p>آساک قرن</p>
+               </Link>
                </div>
                <div className='header_title__Media'>
                     <SocialMedial/>
@@ -32,6 +34,9 @@ const Header = () => {
                     <li>خدمات</li>
                     <li>آساکی شو</li>
                     <li> تماس با ما </li>
+                    <Link href="/aboutPage/About">
+                         <li>  درباره ما </li>
+                    </Link>
                </ul>
           </div>
      </div>
