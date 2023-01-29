@@ -2,6 +2,7 @@ import ProductBox from "./../../components/BoxProducts/ProductsBox.HomePage";
 import Button from "@/components/Button/Button";
 import { RiSearchLine } from 'react-icons/ri';
 import Carousel from "./../../components/Carousel/Carousel";
+import Product from "../../components/Products/Product";
 
 // import Button from 'react-bootstrap/Butt
 
@@ -20,10 +21,7 @@ const HomePage = () => {
                     <p className="homePage__products__title__text">محصولات و خدمات آساک</p>
                 </div>
                 <div className="homePage__products__boxS">
-                    <ProductBox textTitle={"قوانین مالیاتی"} />
-                    <ProductBox textTitle={"قوانین مالیاتی"} />
-                    <ProductBox textTitle={"قوانین مالیاتی"} />
-                    <ProductBox textTitle={"قوانین مالیاتی"} />
+                    <Product/>
                 </div>
 
             </section>
@@ -49,7 +47,9 @@ const HomePage = () => {
                     </div>
                     <div className="homePage__Step__box__content">
                         <div id="searchBox" className="homePage__Step__box__content__search">
+    
                             <input type="text" placeholder=" در آساک دنبال چه می‌گردید" />
+                           
                             <div className="homePage__Step__box__content__search__btn">
                                 <Button text={"جستجو"} size={"large"} color={"official"} />
                                 < RiSearchLine />
