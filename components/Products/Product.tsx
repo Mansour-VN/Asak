@@ -29,22 +29,22 @@ const Product = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <ProductBox textTitle={"نرم افزارAPI- ارسال اطلاعات به سامانه مودیان"} src={"./assets/image/product/API.svg"}/>
+        <ProductBox textTitle={"نرم افزارAPI- ارسال اطلاعات به سامانه مودیان"} src={"/assets/image/product/API.svg"}/>
       </SwiperSlide>
       <SwiperSlide>
-        <ProductBox textTitle={" نرم افزار پایانه فروشگاهی"} src={"./assets/image/product/payaneStore.svg"}/>
+        <ProductBox textTitle={" نرم افزار پایانه فروشگاهی"} src={"/assets/image/product/payaneStore.svg"}/>
       </SwiperSlide>
       <SwiperSlide>
-        <ProductBox textTitle={"وکیل مالیاتی"} src={"./assets/image/product/Lawyer-pana.svg"}/>
+        <ProductBox textTitle={"وکیل مالیاتی"} src={"/assets/image/product/Lawyer-pana.svg"}/>
       </SwiperSlide>
       <SwiperSlide>
-        <ProductBox textTitle={"طراحی سایت"} src={"./assets/image/product/webdesign.svg"}/>
+        <ProductBox textTitle={"طراحی سایت"} src={"/assets/image/product/webdesign.svg"}/>
       </SwiperSlide>
       <SwiperSlide>
-        <ProductBox textTitle={"امور ثبت شرکتها"} src={"./assets/image/product/Company-rafiki.svg"}/>
+        <ProductBox textTitle={"امور ثبت شرکتها"} src={"/assets/image/product/Company-rafiki.svg"}/>
       </SwiperSlide>
       <SwiperSlide>
-        <ProductBox textTitle={"کار و تامین اجتماعی"} src={"./assets/image/product/Law firm-pana.svg"}/>
+        <ProductBox textTitle={"کار و تامین اجتماعی"} src={"/assets/image/product/Law firm-pana.svg"}/>
       </SwiperSlide>
     </Swiper>
   </>
