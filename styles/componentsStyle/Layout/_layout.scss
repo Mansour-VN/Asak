@@ -1,3 +1,6 @@
-.main_Layout{
-    min-height: 70vh;
+.header_Layout{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.5rem;
 }

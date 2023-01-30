@@ -6,9 +6,9 @@ export default function Layout({ children }: {
 }) {
   return (
     <>
-      <>
+      <div className="header_Layout">
         <Header />
-      </>
+      </div>
       <main>{children}</main>
       <>
         <Footer />
