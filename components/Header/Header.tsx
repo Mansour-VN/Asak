@@ -11,6 +11,8 @@ import { RiTelegramLine } from 'react-icons/ri';
 import { TbPhoneCalling } from 'react-icons/tb';
 import Button from '../Button/Button';
 import SocialMedial from '../SocialMedia/SocialMedia';
+import Image from 'next/image';
+
 
 
 function BasicExample() {
@@ -19,7 +21,11 @@ function BasicExample() {
                <div className='header_title'>
                     <div className="header_title_Logo">
                          <Link href="/">
-                              <img src="./assets/image/DIAN.png" alt="" />
+                              <Image
+                                   src="/assets/image/DIAN.png" alt="Picture of the author"
+                                   width={80}
+                                   height={80}
+                              />
                               <p>آساک قرن</p>
                          </Link>
                     </div>

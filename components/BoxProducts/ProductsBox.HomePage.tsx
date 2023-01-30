@@ -1,16 +1,21 @@
 import Button from '../Button/Button';
-import * as React from 'react'
-
+import * as React from 'react';
+import Image from 'next/image';
 interface Text {
-    textTitle :string,
+    textTitle: string,
     src: any,
 }
 
-const ProductBox:React.FC<Text> = ({textTitle, src}) => {
-    return ( 
+const ProductBox: React.FC<Text> = ({ textTitle, src }) => {
+    return (
         <div className="boxProductHomePage">
             <div className='boxProductHomePage__imageBox'>
-                <img src={src} alt="" />
+                <Image
+                    alt="Picture of the author"
+                    src={src}
+                    width={200}
+                    height={200}
+                />
             </div>
             <div className='boxProductHomePage__textTitle'>
                 <p>{textTitle}</p>
@@ -19,7 +24,7 @@ const ProductBox:React.FC<Text> = ({textTitle, src}) => {
                 <Button text={"بیشتر بدایند"} size={"normal"} />
             </div>
         </div>
-     );
+    );
 }
- 
-export default ProductBox ;
+
+export default ProductBox;
