@@ -11,7 +11,7 @@ const HomePage = () => {
         <div className="homePage" id="home">
             <section className="homePage__carouselBox">
                     <div className="homePage__carouselBox__title">
-                           <h2>اینجا متنی باشد که گویای هدف اصلی کار باشه</h2>
+                        <h2>نرم افزار پایانه فروشگاهی و API  خودرا از ما بخواهید </h2>
                     </div>
                     <Carousel/>
             </section>
@@ -32,11 +32,13 @@ const HomePage = () => {
                 <div className="homePage__MyFamily__contact">
                     <div className="homePage__MyFamily__contact__text">
                         <p>
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                            جهت دریافت هرگونه خدمات و خرید محصولات اعم از آموزش قانون پایانه های فروشگاهی و سامانه مودیان، آموزش و مشاوره مالی و مالیاتی، نرم افزار استاندارد سازی و API و... فرم مقابل را تکمیل نموده تا با شما تماس بگیریم.
+                            <br />
+                            از اینکه آساک قرن را انتخاب کردید مفتخریم.
                         </p>
                     </div>
                     <div>
-                        <Button text={"به زودی"} size={"large"} color={"official"} />
+                        <Button text={"فرم درخواست"} size={"large"} color={"official"} />
                     </div>
                 </div>
             </section>

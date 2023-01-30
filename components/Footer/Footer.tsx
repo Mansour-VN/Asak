@@ -8,44 +8,51 @@ const  Footer =()=> {
                 <div className="col">
                     <h1>ارتباط با ما</h1>
                     <ul>
-                        <li>سایت ۱</li>
-                        <li>سایت ۲</li>
-                        <li>سایت ۳</li>
-                        <li>سایت ۴</li>
+                        <li>آدرس ۱</li>
+                        <li>تلفن ۲</li>
+                        <li>لوکیشن ۲</li>
                     </ul>
+            
                 </div>
                 <div className="col">
-                    <h1>درباره ما </h1>
+                    <h1>سایت های موردنیاز</h1>
                     <ul>
-                        <li>سایت ۱</li>
-                        <li>سایت ۲</li>
-                        <li>سایت ۳</li>
-                        <li>سایت ۴</li>
-                    </ul>
-                </div>
-                <div className="col">
-                    <h1>سایت های مرتبط</h1>
-                    <ul>
-                        <li>سایت ۱</li>
-                        <li>سایت ۲</li>
-                        <li>سایت ۳</li>
-                        <li>سایت ۴</li>
+                        <li>
+                            <a href="https://dianhamrah.ir/">دیان همراه‌فردا</a>
+                        </li>
+                        <li>
+                            <a href="https://mefa.ir/fa-IR/mefa/1/page/%D8%B5%D9%81%D8%AD%D9%87-%D8%A7%D8%B5%D9%84%DB%8C">وزارت اقتصاد و دارایی</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tax.gov.ir/Pages/HomePage">سازمان امورمالیاتی کشور</a>
+                        </li>
+                        <li>
+                            <a href="https://www.evat.ir/">سامانه عملیات الکترونیک مالیات بر ارزش اقزوده</a>
+                        </li>
+                        <li>
+                            <a href="https://irsherkat.ssaa.ir/Design/EstablishmentRequest/Index.aspx">سازمان ثبت اسناد و املاک کشور</a>
+                        </li>
 
                     </ul>
                 </div>
                 <div className="col">
-                    <h1>فرم های پر کاربرد</h1>
+                    <h1>لینک‌های پر کاربرد</h1>
                     <ul>
-                        <li>سایت ۱</li>
-                        <li>سایت ۲</li>
-                        <li>سایت ۳</li>
-                        <li>سایت ۴</li>
+                        <li>
+                            <a href="https://register.tax.gov.ir/Pages/Login">پرتال ثبت نام و خدمات جامع الکترونیک مالیاتی</a>
+                        </li>
+                        <li>
+                            <a href="https://payments.tax.gov.ir/">پرداخت الکترونیکی مالیات</a>
+                        </li>
+                        <li>
+                            <a href="https://my.tax.gov.ir/">درگاه ملی خدمات الکترونیک سازمان امورمالیاتی</a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div>
             <div className="col social">
-                    <h1>Social</h1>
+                    <h1>فضای مجازی</h1>
                     <SocialMedial/>
             </div>
             </div>

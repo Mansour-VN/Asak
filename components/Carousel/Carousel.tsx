@@ -10,8 +10,8 @@ function UncontrolledExample() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>شعاری برای همکاری</h3>
-          <p>با دیان همراه آموزش ببینید با آساک صورت حساب صادر کنید</p>
+          <h3>دیان همراه فردا اولین معتمد مالیاتی کشور</h3>
+          <p>با دیان همراه آموزش ببینید با آساک صورت حساب ارسال کنید</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -22,8 +22,8 @@ function UncontrolledExample() {
         />
 
         <Carousel.Caption>
-        <h3>شعاری برای همکاری</h3>
-          <p>با دیان همراه آموزش ببینید با آساک صورت حساب صادر کنید</p>
+          <h3>اولین معتمد نوع 2 و 3 مالیاتی کشور</h3>
+          <p>با دیان همراه آموزش ببینید با آساک صورت حساب ارسال کنید</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -34,8 +34,8 @@ function UncontrolledExample() {
         />
 
         <Carousel.Caption>
-        <h3>شعاری برای همکاری</h3>
-          <p>با دیان همراه آموزش ببینید با آساک صورت حساب صادر کنید</p>
+              <h3>دیان همراه امور مالیاتی شمارا هموار می‌کند</h3>
+            <p>با دیان همراه آموزش ببینید با آساک صورت حساب ارسال کنید</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -46,8 +46,8 @@ function UncontrolledExample() {
         />
 
         <Carousel.Caption>
-        <h3>شعاری برای همکاری</h3>
-          <p>با دیان همراه آموزش ببینید با آساک صورت حساب صادر کنید</p>
+          <h3>ارائه انواع خدمات مالی و مالیاتی</h3>
+          <p>با دیان همراه آموزش ببینید با آساک صورت حساب ارسال کنید</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

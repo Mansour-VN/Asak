@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper";
-import Button from '../Button/Button';
 import * as React from 'react'
 
 import ProductBox from '../BoxProducts/ProductsBox.HomePage';
@@ -30,22 +29,22 @@ const Product = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <ProductBox textTitle={"محصول شماره یک"}/>
+        <ProductBox textTitle={"نرم افزارAPI- ارسال اطلاعات به سامانه مودیان"} src={"./assets/image/product/API.svg"}/>
       </SwiperSlide>
       <SwiperSlide>
-        <ProductBox textTitle={"محصول شماره یک"}/>
+        <ProductBox textTitle={" نرم افزار پایانه فروشگاهی"} src={"./assets/image/product/payaneStore.svg"}/>
       </SwiperSlide>
       <SwiperSlide>
-        <ProductBox textTitle={"محصول شماره یک"}/>
+        <ProductBox textTitle={"وکیل مالیاتی"} src={"./assets/image/product/Lawyer-pana.svg"}/>
       </SwiperSlide>
       <SwiperSlide>
-        <ProductBox textTitle={"محصول شماره یک"}/>
+        <ProductBox textTitle={"طراحی سایت"} src={"./assets/image/product/webdesign.svg"}/>
       </SwiperSlide>
       <SwiperSlide>
-        <ProductBox textTitle={"محصول شماره یک"}/>
+        <ProductBox textTitle={"امور ثبت شرکتها"} src={"./assets/image/product/Company-rafiki.svg"}/>
       </SwiperSlide>
       <SwiperSlide>
-        <ProductBox textTitle={"محصول شماره یک"}/>
+        <ProductBox textTitle={"کار و تامین اجتماعی"} src={"./assets/image/product/Law firm-pana.svg"}/>
       </SwiperSlide>
     </Swiper>
   </>

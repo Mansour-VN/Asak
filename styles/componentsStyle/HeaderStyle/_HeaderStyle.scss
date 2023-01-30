@@ -24,6 +24,16 @@
             align-items: center;
             width: 20%;
 
+            a{
+                display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+            // background-color: rebeccapurple;
+            align-items: center;
+            width: 20%;
+            }
+
             @include respond(mobile){
                 width: fit-content;
                 gap: 0px;

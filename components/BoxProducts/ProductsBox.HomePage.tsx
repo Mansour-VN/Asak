@@ -3,13 +3,14 @@ import * as React from 'react'
 
 interface Text {
     textTitle :string,
+    src: any,
 }
 
-const ProductBox:React.FC<Text> = ({textTitle}) => {
+const ProductBox:React.FC<Text> = ({textTitle, src}) => {
     return ( 
         <div className="boxProductHomePage">
             <div className='boxProductHomePage__imageBox'>
-                <img src="/assets/image/Lawyer-pana.svg" alt="" />
+                <img src={src} alt="" />
             </div>
             <div className='boxProductHomePage__textTitle'>
                 <p>{textTitle}</p>

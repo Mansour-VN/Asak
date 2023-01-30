@@ -1,6 +1,15 @@
 import Head from 'next/head';
+import { useState, useContext } from 'react';
 import HomePage from './HomePage/HomePage';
+import Theme from "./../Context/theme";
+
 export default function Home() {
+
+    const theme = useContext(Theme);
+    
+    const {darkMode} = theme;
+
+    console.log("darkMode is : ", darkMode)
   return (
     <>
       <Head>
