@@ -9,9 +9,11 @@ export default function App({ Component, pageProps }: AppProps) {
 //   useEffect(()=>{
 //     import("bootstrap/dist/js/bootstrap");
 // },[])
-useEffect (()=>{
-      import("bootstrap/dist/js/bootstrap");
-},[])
+    useEffect(() => {
+        typeof document !== undefined
+            ? require('bootstrap/dist/js/bootstrap')
+            : null
+    }, [])
   return (
   <Layout>
     <Component {...pageProps} />
