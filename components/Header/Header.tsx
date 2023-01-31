@@ -22,7 +22,7 @@ function BasicExample() {
                     <div className="header_title_Logo">
                          <Link href="/">
                               <Image
-                                   src="/assets/image/DIAN.png" alt="Picture of the author"
+                                   src="/assets/image/dian.svg" alt="Picture of the author"
                                    width={80}
                                    height={80}
                               />
