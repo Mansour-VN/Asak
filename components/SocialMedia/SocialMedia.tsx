@@ -7,7 +7,9 @@ const SocialMedial = () => {
         <>
             <div className="socialMedia">
                     <div className='socialMedia_box'>
-                    <BsWhatsapp/>
+                    <a href="https://api.whatsapp.com/send?phone=09045736529&text=Hello this is the starting message">
+                         <BsWhatsapp/>
+                    </a>
                     <AiOutlineInstagram/>
                     <RiTelegramLine/>
                     </div>
