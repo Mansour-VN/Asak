@@ -29,13 +29,13 @@ const Product = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <ProductBox textTitle={"نرم افزارAPI- ارسال اطلاعات به سامانه مودیان"} src={"/assets/image/product/API.svg"}/>
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProductBox textTitle={" نرم افزار پایانه فروشگاهی"} src={"/assets/image/product/payaneStore.svg"}/>
+        <ProductBox textTitle={"نرم افزارهای استاندارد سازی و ارسال اطلاعات"} src={"/assets/image/product/API.svg"}/>
       </SwiperSlide>
       <SwiperSlide>
         <ProductBox textTitle={"وکیل مالیاتی"} src={"/assets/image/product/Lawyer-pana.svg"}/>
+      </SwiperSlide>
+      <SwiperSlide>
+        <ProductBox textTitle={" نرم افزار پایانه فروشگاهی"} src={"/assets/image/product/payaneStore.svg"}/>
       </SwiperSlide>
       <SwiperSlide>
         <ProductBox textTitle={"طراحی سایت"} src={"/assets/image/product/webdesign.svg"}/>

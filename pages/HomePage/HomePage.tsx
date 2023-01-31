@@ -10,10 +10,10 @@ const HomePage = () => {
     return (
         <div className="homePage" id="home">
             <section className="homePage__carouselBox">
-                    <div className="homePage__carouselBox__title">
-                        <h2>نرم افزار پایانه فروشگاهی و API  خودرا از ما بخواهید </h2>
-                    </div>
-                    <Carousel/>
+                <div className="homePage__carouselBox__title">
+                    <h2>نرم افزارهای استاندارد سازی و ارسال به سامانه مودیان مالیاتی را از ما بخواهید</h2>
+                </div>
+                <Carousel />
             </section>
             <section className="homePage__products">
 
@@ -21,7 +21,7 @@ const HomePage = () => {
                     <p className="homePage__products__title__text">محصولات و خدمات آساک</p>
                 </div>
                 <div className="homePage__products__boxS">
-                    <Product/>
+                    <Product />
                 </div>
 
             </section>
@@ -32,10 +32,14 @@ const HomePage = () => {
                 <div className="homePage__MyFamily__contact">
                     <div className="homePage__MyFamily__contact__text">
                         <p>
-                            جهت دریافت هرگونه خدمات و خرید محصولات اعم از آموزش قانون پایانه های فروشگاهی و سامانه مودیان، آموزش و مشاوره مالی و مالیاتی، نرم افزار استاندارد سازی و API و... فرم مقابل را تکمیل نموده تا با شما تماس بگیریم.
+
+                            جهت دریافت هرگونه خدمات و خرید محصولات، آموزش و مشاور مالی و مالیاتی نرم افزارهای استاندارد سازی و... فرم مقابل را تکیمل نموده تا ما با شما تماس بگیریم.
+                    
                             <br />
+
                             از اینکه آساک قرن را انتخاب کردید مفتخریم.
                         </p>
+
                     </div>
                     <div>
                         <Button text={"فرم درخواست"} size={"large"} color={"official"} />
@@ -49,9 +53,9 @@ const HomePage = () => {
                     </div>
                     <div className="homePage__Step__box__content">
                         <div id="searchBox" className="homePage__Step__box__content__search">
-    
+
                             <input type="text" placeholder=" در آساک دنبال چه می‌گردید" />
-                           
+
                             <div className="homePage__Step__box__content__search__btn">
                                 <Button text={"جستجو"} size={"large"} color={"official"} />
                                 < RiSearchLine />
@@ -61,7 +65,11 @@ const HomePage = () => {
 
                         <div className="homePage__Step__box__content__text">
                             <p>
-                                دلیل اعتماد شما به آساک حاصل چندین سال تجربه و کار حرفه ای است، با خیال راحت همراه همیشگی آساک خواهید شد. مطمئنیم
+                                <strong>
+                                با خیال راحت همراه همیشگی آساک باشید.
+                                </strong>
+                                <br />
+                                دلیل اعتماد شما به آساک حاصل چندین سال تجربه و کار حرفه ای ماست.
                             </p>
                         </div>
                     </div>
