@@ -9,11 +9,21 @@
         align-items: center;
         gap: 1.2rem;
 
+
+        @include respond(mobile){
+            gap: 0.5rem;
+        }
+
         svg {
             font-size: xxx-large;
             padding: 0.4rem;
            cursor: pointer;
            transition: all .4s cubic-bezier(0, 1.08, 0.69, 1.12);
+
+           @include respond(mobile){
+            font-size: xx-large;
+            padding: 0rem;
+           }
         }
 
         svg:nth-child(1) {
@@ -34,6 +44,19 @@
                 transform: scale(1.7);
             }
         }
+        
+        svg:nth-child(4) {
+            &:hover {
+                color: rgb(0, 105, 0);
+                transform: scale(1.7);
+            }
+        }
 
+        svg:nth-child(5) {
+            &:hover {
+                color: var(--official);
+                transform: scale(1.7);
+            }
+        }
     }
 }

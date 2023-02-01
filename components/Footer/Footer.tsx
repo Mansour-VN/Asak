@@ -54,7 +54,6 @@ const  Footer =()=> {
             </div>
             <div>
             <div className="col social">
-                    <h1>فضای مجازی</h1>
                     <SocialMedial/>
             </div>
             </div>
