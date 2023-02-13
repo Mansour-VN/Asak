@@ -1,24 +1,19 @@
-import Layout from '@/components/Layout/layout';
+import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
-import React, { useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import "./../styles/globals.scss";
-import { AppWrapper } from '@/Context/theme';
-
-
+import { Provider } from 'react-redux';
+import Layout from "./../components/Layout/Layout";
+import {store} from "./../app/store"
 export default function App({ Component, pageProps }: AppProps) {
+  return( 
+    <Provider store={store}>
 
-    useEffect(() => {
-        typeof document !== undefined
-            ? require('bootstrap/dist/js/bootstrap')
-            : null
-    }, [])
+      <Layout >
 
-  return (
-    <AppWrapper>
-        <Layout>
-            <Component {...pageProps} />
-        </Layout>
-    </AppWrapper>
-)
+        <Component {...pageProps}/>
+
+      </Layout>
+
+    </Provider>
+  
+  )
 }
