@@ -23,7 +23,7 @@ const HomePage = () => {
 
         {/*start Show product*/}
         <div className="flex flex-col border-orange-50">
-            <div className="divider dividerProduct"> <h1 className="text-2xl md:text-6xl  text-shadow shadow-orange-400"> محصولات </h1> </div>
+            <div className="divider dividerProduct md:py-8"> <h1 className="text-2xl md:text-6xl  text-shadow shadow-orange-400"> محصولات </h1> </div>
             <div className="grid card bg-base-400 rounded-box place-items-center">
                 <ProductShow/>
             </div>
@@ -33,7 +33,7 @@ const HomePage = () => {
 
         {/* start Member in Aasak */}
         <div className="flex flex-col border-orange-50">
-            <div className="divider dividerProduct"> <h1 className="text-2xl md:text-6xl text-shadow shadow-orange-400 rounded-xl"> عضو خانواده آساک شوید </h1> </div>
+            <div className="divider dividerProduct md:py-8"> <h1 className="text-2xl md:text-6xl text-shadow shadow-orange-400 rounded-xl"> عضو خانواده آساک شوید </h1> </div>
            
                 <MemberBox/>
             
@@ -44,7 +44,7 @@ const HomePage = () => {
 
         {/*start Search in Aasak*/}
         <div className="flex flex-col border-orange-50 mt-4">
-            <div className="divider dividerProduct"> <h1 className="text-2xl md:text-6xl text-shadow shadow-orange-400">   جستجو کنید  </h1> </div>
+            <div className="divider dividerProduct md:py-8"> <h1 className="text-2xl md:text-4xl text-shadow shadow-orange-400">   جستجو کنید  </h1> </div>
             <div className="grid card bg-base-400 rounded-box place-items-center" id="goSearch"> 
                 <Search/>
             </div>
