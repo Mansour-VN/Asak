@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper";
 import * as React from 'react'
 import ProductCard from "./ProductCard";
-
+import {ProductS} from "../../public/Content/dumyy";
 
 const Product = () => {
 
@@ -28,25 +28,18 @@ const Product = () => {
                 modules={[EffectCoverflow, Pagination]}
                 className="mySwiper mySwiperProduct p-0"
             >
-                {}
-                <SwiperSlide>
-                    <ProductCard textTitle={"نرم افزارهای استاندارد سازی و ارسال اطلاعات"} src={"/assets/image/product/API.svg"}/>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <ProductCard textTitle={" نرم افزار پایانه فروشگاهی"} src={"/assets/image/product/payaneStore.svg"}/>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <ProductCard textTitle={"وکیل مالیاتی"} src={"/assets/image/product/Lawyer-pana.svg"}/>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <ProductCard textTitle={"طراحی سایت"} src={"/assets/image/product/webdesign.svg"}/>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <ProductCard textTitle={"امور ثبت شرکتها"} src={"/assets/image/product/Company-rafiki.svg"}/>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <ProductCard textTitle={"کار و تامین اجتماعی"} src={"/assets/image/product/Law firm-pana.svg"}/>
-                </SwiperSlide>
+                {ProductS.map((p)=>{
+
+                    return (
+                        <div key={p.id}>
+                            <SwiperSlide>
+                                <ProductCard textTitle={p.title} src={p.image}/>
+                            </SwiperSlide>
+                        </div>
+
+                    )
+                })}
+
             </Swiper>
         </>
     );

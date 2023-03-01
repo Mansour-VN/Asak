@@ -5,7 +5,7 @@ import {  useAppSelector } from "@/app/hooks";
 const Layout = ({children}) =>{
     
   const {theme} = useAppSelector(state => state.colorTheme);
-  console.log("theme in layoutPage:", theme)
+  // console.log("theme in layoutPage:", theme)
  
     return (
         // <div id="Layout"  data-theme={`${theme==true ? ("luxury"):("light")}`}>
@@ -14,11 +14,11 @@ const Layout = ({children}) =>{
                 <Header/>
             </div>
 
-            <>
+            <div className="md:container mx-auto min-h-screen">
                 {children}
-            </>
+            </div>
 
-            <div className="">
+            <div className="bg-base-200" >
                 <Footer/>
             </div>
 

@@ -3,7 +3,7 @@ const About = () => {
     return (
         <div className="w-ful">
 
-            <div className="min-h-screen flex flex-col gap-2 items-center justify-center">
+            <div className="flex flex-col gap-2 items-center justify-center">
                 <div tabIndex={0} className="w-1/2 collapse collapse-arrow border border-base-300 bg-base-300 rounded-box">
                     <div className="collapse-title text-xl font-medium text-right">
                         <p>

@@ -91,7 +91,7 @@ const Header =()=> {
                   <a>آساکی‌شو</a>
                 </li>
                 <li>
-                  <a>محصولات</a>
+                  <Link href="/ProductPage">محصولات</Link>
                 </li>
                 <li tabIndex={0}>
                   <a className="justify-between">
@@ -163,7 +163,7 @@ const Header =()=> {
                 <a>آساکی‌شو</a>
               </li>
               <li>
-                <a>محصولات</a>
+                <Link href="/ProductPage">محصولات</Link>
               </li>
               <li>
                 <Link href="/">

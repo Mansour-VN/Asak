@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const CardProduct = ({src, textTitle, description}) =>{
     return (
-        <div className="card bg-base-300 shadow-l w-80 ">
+        <div className="card bg-base-300 shadow-l w-80 max-h-96 ">
             <figure className="px-10 pt-10">
                 {/*<img src={src} alt="Shoes" className="rounded-xl" />*/}
                 <Image src={src}
