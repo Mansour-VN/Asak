@@ -1,10 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import themeSlice from "./../features/theme";
+
 // ...
 
 export const store = configureStore({
   reducer: {
-      colorTheme :  themeSlice
+      colorTheme :  themeSlice,
   },
 })
 

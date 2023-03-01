@@ -21,10 +21,20 @@ import { useAppSelector } from "@/app/hooks";
 
 const Carousel = () => {
 
-  const itemTex = [
-    "دیان‌همراه فردا اولین معتمد مالیاتی کشور ",
-    "اولین معتمد مالیاتی نوع دو و سه کشور",
-    "دیان‌همراه فردا امور مالیاتی شما را هموار می‌کند"
+  const ContentCarousel = [
+      {
+          id:1,
+          textContent:  "دیان‌همراه فردا اولین معتمد مالیاتی کشور "
+      },
+      {
+          id:2,
+          textContent: "اولین معتمد مالیاتی نوع دو و سه کشور"
+      },
+      {
+          id:3,
+          textContent:  "دیان‌همراه فردا امور مالیاتی شما را هموار می‌کند"
+      }
+
   ]
 
   const { theme } = useAppSelector(state => state.colorTheme);
@@ -53,13 +63,14 @@ const Carousel = () => {
           }}
           data-swiper-parallax="-23%"
         ></div>
-        {itemTex.map((item) => {
+        {ContentCarousel.map((item ) => {
           return (
+              <div key={item.id}>
                   <SwiperSlide>
                       <div className="title" data-swiper-parallax="-300">
                           <div className="flex flex-col w-full">
                               <div className="grid card bg-base-300 bg-opacity-75 rounded-box place-items-center">
-                                  <h1 className={`text-center text-2xl p-2 md:p-8 md:text-6xl ${theme ? "text-orange-400" : ""}`}>{item}</h1>
+                                  <h1 className={`text-center text-2xl p-2 md:p-8 md:text-6xl ${theme ? "text-orange-400" : ""}`}>{item.textContent}</h1>
                               </div>
                               <div className="grid card bg-base-300 bg-opacity-75 rounded-box place-items-center mt-4">
                                   <p className={`w-full text-center font-semibold text-xs p-1 md:text-xl ${theme ? "text-orange-400" : ""} `}>
@@ -70,6 +81,8 @@ const Carousel = () => {
                           </div>
                       </div>
                   </SwiperSlide>
+
+              </div>
 
 
           )

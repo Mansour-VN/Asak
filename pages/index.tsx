@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link  href="https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Sans+Arabic:wght@300;400&display=swap" rel="stylesheet"/>
       </Head>
-      <main className="min-h-screen md:container md:mx-auto">
+      <main>
         <HomePage />
       </main>
     </>
