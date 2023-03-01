@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d669a8f-7699-45ad-991f-0ac88a945553" name="Changes" comment="refactor: change project name">
-      <change afterPath="$PROJECT_DIR$/app/features/ProductContent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Header/Mobile.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/ProductPage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Content/dumyy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="6d669a8f-7699-45ad-991f-0ac88a945553" name="Changes" comment="fix:  create dummy and ProductPage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Carousel/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Carousel/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Layout/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/Layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Product/ProductCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Product/ProductCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Product/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Product/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/aboutPage/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/aboutPage/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,21 +42,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MTConfigurable",
-    "ts.external.directory.path": "E:\\nextjs\\git-company-dian-and-asak\\asakgharn.ir\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MTConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\nextjs\\git-company-dian-and-asak\\asakgharn.ir\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

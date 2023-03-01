@@ -18,7 +18,7 @@ const Layout = ({children}) =>{
                 {children}
             </div>
 
-            <div className="">
+            <div className="bg-base-200" >
                 <Footer/>
             </div>
 

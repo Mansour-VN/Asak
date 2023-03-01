@@ -22,6 +22,9 @@ a, button, li, h1, h2, h3, h4, h5 {
   font-family: "iransans";
   font-weight:bolder;
 }
+#Footer{
+  direction: rtl;
+}
 
 h1 {
   text-shadow: 0 0 7px #fb923c;
