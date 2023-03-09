@@ -1,4 +1,5 @@
-import CarouselBanner from "@/components/carousel";
+// import CarouselBanner from "@/components/carousel";
+import CarouselBanner from "../../components/Carousel";
 import ProductShow from "@/components/Product";
 import MemberBox from "@/components/MemberBox";
 import Search from "@/components/Search/SearchBoxForHome";
