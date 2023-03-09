@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d669a8f-7699-45ad-991f-0ac88a945553" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6d669a8f-7699-45ad-991f-0ac88a945553" name="Changes" comment="rebase: git ignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676289426888</updated>
       <workItem from="1676289429878" duration="694000" />
-      <workItem from="1678391375707" duration="656000" />
+      <workItem from="1678391375707" duration="832000" />
     </task>
     <task id="LOCAL-00001" summary="rebase: rebase project with tailwind">
       <created>1676291334988</created>
