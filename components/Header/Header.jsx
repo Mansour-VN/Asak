@@ -20,9 +20,20 @@ const Header =()=> {
     <div>
       <div
         id="header-title"
-        className="flex flex-col md:flex-row justify-center md:justify-around items-center md:gap-4 p-2 "
+        className="flex flex-col md:flex-row justify-center px-4 items-center"
       >
-        <div className="flex justify-center items-center  flex-row gap-2 ">
+        <div className="flex justify-around items-center gap-4 w-1/2 flex-row">
+
+          {/* start lable darck mode  whit table*/}
+          <div
+              className="text-4xl transition ease-in-out delay-1000"
+              onClick={(event) => changeTheme(event)}
+          >
+            {theme ? <BsMoon /> : <BsSun />}
+          </div>
+          {/* end lable darck mode */}
+
+
           <div className="flex justify-center items-center flex-col gap-2 ">
             <p className="font-semibold ">021-96646</p>
             <button className="btn btn-outline md:text-xl">
@@ -30,31 +41,25 @@ const Header =()=> {
             </button>
           </div>
 
+
           <div id="social">
             <SocialMedia />
           </div>
         </div>
 
-        <div className="hidden md:flex flex-row justify-center  items-center md:border-l-4 md:border-orange-400 pl-4">
+        <div className="hidden md:flex flex-row justify-center gap-4  items-center  md:border-l-4 md:border-orange-400 pl-4">
           <p className="md:text-2xl text-xl font-semibold">آساک‌قرن</p>
-          
-          {/* start lable darck mode  whit table*/}
-          <div
-            className="text-4xl px-2 transition ease-in-out delay-1000"
-            onClick={(event) => changeTheme(event)}
-          >
-            {theme ? <BsMoon /> : <BsSun />}
-          </div>
-          {/* end lable darck mode */}
+
           <Image
             width={50}
             height={50}
             src="/assets/image/logo/dian.svg"
             alt="LogoDian"
-            className={ `rounded animate-bounce ${theme? "bg-orange-400" : ""}`}
+            className={ `rounded  ${theme? "bg-orange-400" : ""}`}
           />
+            {/*animate-bounce*/}
         </div>
-      </div>
+        </div>
 
       <div
         id="navbarMenu"
