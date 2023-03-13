@@ -3,11 +3,10 @@ import SocialMedia from "./../SocialMedia/SocialMedia";
 import { useAppDispatch, useAppSelector } from "@/app/hooks";
 import { changeThemeFunc } from "@/app/features/theme";
 import { BsMoon, BsSun } from "react-icons/bs";
-import Link from "next/link";
+import MobileMenu from "./Mobile";
+import DeskTopMenu from "./DesktopMenu";
 
-
-
-const Header =()=> {
+const Header = () => {
 
   const { theme } = useAppSelector((state) => state.colorTheme);
   const dispatch = useAppDispatch();
@@ -20,39 +19,44 @@ const Header =()=> {
     <div>
       <div
         id="header-title"
-        className="flex flex-col md:flex-row justify-center md:justify-around items-center md:gap-4 p-2 "
+        className="flex flex-col md:flex-row justify-center p-4 items-center"
       >
-        <div className="flex justify-center items-center  flex-row gap-2 ">
-          <div className="flex justify-center items-center flex-col gap-2 ">
-            <p className="font-semibold ">021-96646</p>
-            <button className="btn btn-outline md:text-xl">
+        <div className="flex justify-between pr-2 items-center gap-4 md:w-1/2 w-full flex-row">
+
+          {/* start lable darck mode  whit table*/}
+          <div
+            className="text-4xl transition ease-in-out delay-1000"
+            onClick={(event) => changeTheme(event)}
+          >
+            {theme ? <BsMoon /> : <BsSun />}
+          </div>
+          {/* end lable darck mode */}
+
+
+          <div className="hidden">
+          <p className="font-semibold ">021-96646</p>
+            <button className="btn btn-outline ">
               دانلود کاتالوگ
             </button>
           </div>
+
 
           <div id="social">
             <SocialMedia />
           </div>
         </div>
 
-        <div className="hidden md:flex flex-row justify-center  items-center md:border-l-4 md:border-orange-400 pl-4">
+        <div className="hidden md:flex flex-row justify-center gap-4  items-center  md:border-l-4 md:border-orange-400 pl-4">
           <p className="md:text-2xl text-xl font-semibold">آساک‌قرن</p>
-          
-          {/* start lable darck mode  whit table*/}
-          <div
-            className="text-4xl px-2 transition ease-in-out delay-1000"
-            onClick={(event) => changeTheme(event)}
-          >
-            {theme ? <BsMoon /> : <BsSun />}
-          </div>
-          {/* end lable darck mode */}
+
           <Image
             width={50}
             height={50}
             src="/assets/image/logo/dian.svg"
             alt="LogoDian"
-            className={ `rounded animate-bounce ${theme? "bg-orange-400" : ""}`}
+            className={`rounded  animate-bounce ${theme ? "bg-orange-400" : ""}`}
           />
+          {/*animate-bounce*/}
         </div>
       </div>
 
@@ -61,137 +65,32 @@ const Header =()=> {
         className="flex flex-row justify-around px-12 md:p-0"
       >
         <div className="navbar">
-          <div className="navbar-start">
-            <div className="dropdown">
-              <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabIndex={0}
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li>
-                   <Link href="/">آساک</Link>
-                </li>
-
-                <li>
-                  <a>آساکی‌شو</a>
-                </li>
-                <li>
-                  <Link href="/ProductPage">محصولات</Link>
-                </li>
-                <li tabIndex={0}>
-                  <a className="justify-between">
-                    خدمات‌ما
-                    <svg
-                      className="fill-current"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                    </svg>
-                  </a>
-                  <ul className="p-2 z-50 bg-base-300">
-                    <li>
-                      <a>خدمات 1</a>
-                    </li>
-                    <li>
-                      <a>خدمات 2</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a>تماس‌با‌ما</a>
-                </li>
-                <li>
-                  <a>ارتباط با‌ما</a>
-                </li>
-                <li>
-                  <Link href="/aboutPage">درباره‌ما</Link>
-                </li>
-              </ul>
-            </div>
+          
+          <div className="hidden w-full  md:flex justify-center">
+              <DeskTopMenu/>
           </div>
 
-          {/* start navbar for deskTop */}
-          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 md:text-xl">
-              <li>
-                <Link href="/aboutPage">درباره‌ما</Link>
-              </li>
-              <li>
-                <a>تماس باما</a>
-              </li>
-              <li tabIndex={0}>
-                <a>
-                  <svg
-                    className="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                  </svg>
-                  خدمات ما
-                </a>
-                <ul className="p-2 z-50 bg-base-300">
-                  <li>
-                    <a>خدمات یک</a>
-                  </li>
-                  <li>
-                    <a>خدمات دو</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>آساکی‌شو</a>
-              </li>
-              <li>
-                <Link href="/ProductPage">محصولات</Link>
-              </li>
-              <li>
-                <Link href="/">
-                    آساک   
-                </Link>
-              </li>
-            </ul>
+       
+          <div className="flex md:hidden">
+              <MobileMenu/>
           </div>
         </div>
 
+
+
         <div className="flex flex-row justify-center items-center md:border-l-4 md:border-warning pl-4 md:hidden">
-          <p className="text-2xl font-semibold">آساک‌قرن</p>
-          {/* start lable darck mode whit mobile */}
-          <div
-            className="text-4xl p-4 transition ease-in-out delay-1000"
-            onClick={(event) => changeTheme(event)}
-          >
-            {theme ? <BsMoon /> : <BsSun />}
-          </div>
-          {/* end lable darck mode */}
+          <p className="text-2xl font-semibold px-2">آساک‌قرن</p>
+         
           <Image
             width={50}
             height={50}
             src="/assets/image/logo/dian.svg"
             alt="LogoDian"
-            className="bg-orange-400 rounded"
+            className="bg-orange-400 rounded animate-bounce"
           />
         </div>
+
+
       </div>
     </div>
   );
