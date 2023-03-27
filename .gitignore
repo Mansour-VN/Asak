@@ -7,6 +7,7 @@
 /.idea
 /.vscode
 workspace.xml
+/.vscode
 /.vs
 # testing
 /coverage
