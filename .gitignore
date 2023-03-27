@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /.idea
+/.vscode
 workspace.xml
 /.vs
 # testing
