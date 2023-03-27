@@ -6,6 +6,7 @@
 .pnp.js
 /.idea
 workspace.xml
+/.vscode
 /.vs
 # testing
 /coverage
